@@ -1,0 +1,52 @@
+{
+	"name": "sveltekit-template-auth",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --check . && eslint .",
+		"format": "prettier --write .",
+		"db:migrate": "node ./scripts/migrate.js",
+		"db:generate": "drizzle-kit generate:sqlite",
+		"db:push": "drizzle-kit push:sqlite",
+		"db:studio": "drizzle-kit studio"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^2.1.0",
+		"@sveltejs/kit": "^1.22.6",
+		"@types/better-sqlite3": "^7.6.4",
+		"@typescript-eslint/eslint-plugin": "^5.62.0",
+		"@typescript-eslint/parser": "^5.62.0",
+		"autoprefixer": "^10.4.15",
+		"dotenv": "^16.3.1",
+		"drizzle-kit": "^0.19.13",
+		"eslint": "^8.47.0",
+		"eslint-config-prettier": "^8.10.0",
+		"eslint-plugin-svelte": "^2.32.4",
+		"globals": "^13.21.0",
+		"postcss": "^8.4.28",
+		"postcss-load-config": "^4.0.1",
+		"prettier": "^3.0.2",
+		"prettier-plugin-svelte": "^3.0.3",
+		"prettier-plugin-tailwindcss": "^0.5.3",
+		"svelte": "^4.2.0",
+		"svelte-check": "^3.5.0",
+		"svelte-eslint-parser": "^0.32.2",
+		"tailwindcss": "^3.3.3",
+		"tslib": "^2.6.2",
+		"typescript": "^5.1.6",
+		"vite": "^4.4.9"
+	},
+	"type": "module",
+	"dependencies": {
+		"@lucia-auth/adapter-sqlite": "^2.0.0",
+		"@lucia-auth/oauth": "^2.1.2",
+		"better-sqlite3": "^8.5.1",
+		"drizzle-orm": "^0.28.2",
+		"lucia": "^2.3.0"
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"version": "5",
+	"dialect": "sqlite",
+	"entries": [
+		{
+			"idx": 0,
+			"version": "5",
+			"when": 1692529958958,
+			"tag": "0000_same_tomorrow_man",
+			"breakpoints": true
+		}
+	]
+}
